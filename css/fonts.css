@@ -1,0 +1,21 @@
+/* === automatic directive @font fase generation === */
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans.eot");
+  src: url("OpenSans.eot?#iefix") format("embedded-opentype"),
+    url("OpenSans.woff2") format("woff2"), url("OpenSans.woff") format("woff"),
+    url("OpenSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans"), url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("wof"),
+    url("../fonts/OpenSans-Bold.eot") format("eot"),
+    url("../fonts/OpenSans-Bold.ttf") format("ttf");
+}

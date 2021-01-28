@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Constructor</title>
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header-sticky">
+      <!-- ======= Main Navigation ======= -->
+      <nav class="header-menu">
+        <div class="container">
+          <a class="menu-item" href="../index.html">Home</a>
+          <a class="menu-item" href="menu.html">Menu</a>
+          <a class="menu-item menu-item--active" href="constructor.html"
+            >Constructor</a
+          >
+          <label for="contact-modal__trigger" class="menu-item label-style"
+            >Contact Us</label
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="page-title">Construct Hotdog Of Your Dream</h1>
+
+        <form class="form">
+          <!-- ========== Выбор булки ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Choose a bun</h2>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="bun-pretzel"
+                type="radio"
+                name="bun"
+                value="pretzel"
+              />
+              <label class="form-card__label" for="bun-pretzel">
+                <h3 class="form-card__title">Pretzel</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/bun-pretzel.png"
+                  alt="Classic bun"
+                />
+                <span class="form-card__price">$0.70</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="bun-french"
+                type="radio"
+                name="bun"
+                value="french"
+              />
+              <label class="form-card__label" for="bun-french">
+                <h3 class="form-card__title">French</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/bun-french.png"
+                  alt="French bun"
+                />
+                <span class="form-card__price">$0.70</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="bun-pita"
+                type="radio"
+                name="bun"
+                value="pita"
+              />
+              <label class="form-card__label" for="bun-pita">
+                <h3 class="form-card__title">Pita</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/bun-pita.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.70</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- ========== Выбор сосиски ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Choose a sausage</h2>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sausage-beef"
+                type="radio"
+                name="sausage"
+                value="all-beef"
+              />
+              <label class="form-card__label" for="sausage-beef">
+                <h3 class="form-card__title">All-Beef</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sausage-beef.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$1.35</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sausage-vegetarian"
+                type="radio"
+                name="sausage"
+                value="vegetarian"
+              />
+              <label class="form-card__label" for="sausage-vegetarian">
+                <h3 class="form-card__title">Vegetarian</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sausage-vegetarian.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$1.35</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sausage-vegan"
+                type="radio"
+                name="sausage"
+                value="vegan"
+              />
+              <label class="form-card__label" for="sausage-vegan">
+                <h3 class="form-card__title">Vegan</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sausage-vegan.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$1.35</span>
+                Vegan
+              </label>
+            </div>
+          </section>
+
+          <!-- ========== Выбор соусов ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Choose sauces</h2>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sauce-mayo"
+                type="checkbox"
+                name="sauce"
+                value="mayo"
+              />
+              <label class="form-card__label" for="sauce-mayo">
+                <h3 class="form-card__title">Mayonnaise</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sauce-mayo.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.30</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sauce-ketchup"
+                type="checkbox"
+                name="sauce"
+                value="ketchup"
+              />
+              <label class="form-card__label" for="sauce-ketchup">
+                <h3 class="form-card__title">Ketchup</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sauce-ketchup.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.30</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="sauce-mustard"
+                type="checkbox"
+                name="sauce"
+                value="mustard"
+              />
+              <label class="form-card__label" for="sauce-mustard">
+                <h3 class="form-card__title">Mustard</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/sauce-mustard.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.30</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- ========== Выбор ингредиентов ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Choose ingredients</h2>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-onion"
+                type="checkbox"
+                name="ingredients"
+                value="onion"
+              />
+              <label class="form-card__label" for="ingredient-onion">
+                <h3 class="form-card__title">Onion</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-onion.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.10</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-lettuce"
+                type="checkbox"
+                name="ingredients"
+                value="lettuce"
+              />
+              <label class="form-card__label" for="ingredient-lettuce">
+                <h3 class="form-card__title">Lettuce</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-lettuce.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.15</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-tomatoes"
+                type="checkbox"
+                name="ingredients"
+                value="tomatoes"
+              />
+              <label class="form-card__label" for="ingredient-tomatoes">
+                <h3 class="form-card__title">Tomatoes</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-tomato.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.20</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-straw"
+                type="checkbox"
+                name="ingredients"
+                value="straw"
+                disabled
+              />
+              <label class="form-card__label" for="ingredient-straw">
+                <h3 class="form-card__title">Straw potatoes (not available)</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-fries.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.40</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-pickle"
+                type="checkbox"
+                name="ingredients"
+                value="pickle"
+              />
+              <label class="form-card__label" for="ingredient-pickle">
+                <h3 class="form-card__title">Pickle</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-pickle.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.25</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-cheese"
+                type="checkbox"
+                name="ingredients"
+                value="cheese"
+              />
+              <label class="form-card__label" for="ingredient-cheese">
+                <h3 class="form-card__title">Cheese</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-cheese.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.45</span>
+              </label>
+            </div>
+
+            <div class="form-card">
+              <input
+                class="form-card__input"
+                id="ingredient-bacon"
+                type="checkbox"
+                name="ingredients"
+                value="bacon"
+              />
+              <label class="form-card__label" for="ingredient-bacon">
+                <h3 class="form-card__title">Bacon</h3>
+                <img
+                  class="form-card__img"
+                  src="../img/constructor/ingredient-bacon.png"
+                  alt="Pita bun"
+                />
+                <span class="form-card__price">$0.95</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- ========== Личные данные посетителя ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Enter your data</h2>
+
+            <div class="form-field">
+              <label
+                class="form-field__label form-field__label--required"
+                for="customer-name"
+              >
+                Name
+              </label>
+              <input
+                class="form-field__input"
+                id="customer-name"
+                type="text"
+                name="customer_name"
+                placeholder="Please enter your name"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="customer-name">
+                Email
+              </label>
+              <input
+                class="form-field__input"
+                id="customer-email"
+                type="email"
+                name="customer_email"
+                placeholder="Please enter your email"
+              />
+            </div>
+
+            <div class="form-field">
+              <label
+                class="form-field__label form-field__label--required"
+                for="customer-tel"
+              >
+                Phone number
+              </label>
+              <input
+                class="form-field__input"
+                id="customer-tel"
+                type="tel"
+                name="customer_tel"
+                placeholder="+38(0##)-##-####"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="customer-wishes">
+                Special requests
+              </label>
+              <textarea
+                class="form-field__input"
+                name="srecial_requests"
+                id="customer-wishes"
+                rows="10"
+                maxlength="200"
+                placeholder="200 characters maximum"
+              ></textarea>
+            </div>
+          </section>
+
+          <!-- ========== Данные о заказе ========== -->
+          <section class="form-group">
+            <h2 class="form-group__title">Order information</h2>
+
+            <div class="form-field">
+              <label class="form-field__label" for="quantity">
+                Number of items (hotdogs)
+              </label>
+              <input
+                class="form-field__input"
+                type="number"
+                name="quantity"
+                id="quantity"
+                min="1"
+                placeholder="Min 1"
+                value="1"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="payment">
+                Payment type
+              </label>
+              <select class="form-field__input" name="payment" id="payment">
+                <option value="card">Credit card</option>
+                <option value="cash">Cash</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <input
+                id="discount"
+                type="checkbox"
+                name="discount"
+                value="yes"
+              />
+              <label class="form-field__label" for="discount">
+                I have a discount coupon
+              </label>
+            </div>
+
+            <div class="form-field">
+              <span class="form-field__label">Total price:</span>
+              <strong class="form-field__total">$0.00</strong>
+            </div>
+          </section>
+
+          <!-- ========== Кнопки ========== -->
+          <section class="form-group">
+            <button class="form-button form-button--primary" type="submit">
+              Order
+            </button>
+            <button class="form-button form-button--danger" type="reset">
+              Reset
+            </button>
+          </section>
+        </form>
+      </div>
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">&reg; 2016 Dirty Dogs all rights reserved</p>
+        <p class="contacts">
+          <span class="contacts-item contacts-item--bordered"
+            >274 Marconi Blvd. Columbus, Ohio 43215</span
+          >
+          <a class="contacts-item contacts-item--bordered" href="tel:6145380095"
+            >614-538-0095</a
+          >
+          <label for="contact-modal__trigger" class="contacts-item label-style"
+            >Contact Us</label
+          >
+        </p>
+      </div>
+    </footer>
+    <!--====== Contact Modal ======-->
+    <input type="checkbox" name="" id="contact-modal__trigger" />
+
+    <div class="contact-modal">
+      <div class="contact-modal__window">
+        <header class="contact-modal__header">
+          <h2 class="contact-modal__title">Contact Us</h2>
+          <label
+            for="contact-modal__trigger"
+            class="contact-modal__close fas fa-times"
+          ></label>
+        </header>
+
+        <form class="contact-modal__form">
+          <input
+            type="text"
+            class="contact-modal__field"
+            placeholder="Your name"
+          />
+
+          <input
+            type="email"
+            class="contact-modal__field"
+            placeholder="Your email"
+          />
+
+          <textarea
+            name="comment"
+            rows="5"
+            class="contact-modal__field"
+            placeholder="Your comment"
+          ></textarea>
+
+          <button class="contact-modal__button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
